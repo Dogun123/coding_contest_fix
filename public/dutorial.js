@@ -1048,13 +1048,13 @@ function typingAnimation(){
 
 scriptButton1.addEventListener('click',()=>{
   if(typingCount==17){
-    window.location.href="/"
+    location.href="/cover.html"
   } 
 })
 
 scriptButton2.addEventListener('click',()=>{
   if(typingCount==17){
-    window.location.href="learn"
+    location.href="/learn.html"
   } 
 })
 // 스크립트 위치 위로 or 아래로
