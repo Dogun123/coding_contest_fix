@@ -35,7 +35,7 @@ chartResume.style.opacity = "0";
 chartResume.style.pointerEvents = "none"
 
 let activate = true;
-var audio = new Audio('/music/BattleofKings.mp3');
+var audio = new Audio('public/music/BattleofKings.mp3');
 audio.volume = 0;      
 
 

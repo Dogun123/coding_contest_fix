@@ -37,7 +37,7 @@ chartResume.style.opacity = "0";
 chartResume.style.pointerEvents = "none"
 
 let activate = true;
-var audio = new Audio('/music/BattleofKings.mp3');
+var audio = new Audio('public/music/BattleofKings.mp3');
 audio.volume = 0;
       
 
@@ -921,11 +921,14 @@ dropDown.style.pointerEvents="none";
 chartStart.style.pointerEvents="none";
 chartResume.style.pointerEvents="none";
 chartStop.style.pointerEvents="none";
-
+backButton.style.opacity="0";
+backButton.style.pointerEvents="none";
 function typingAnimation(){
 
   speed=60;
   speedSlow=400;
+
+  
 
   if(typingCount==2 || typingCount==3 || typingCount==4 || typingCount==5){
     chartTop.style.backgroundColor="white";
@@ -989,7 +992,15 @@ function typingAnimation(){
     chartResume.classList.remove('blink__animation')
   }
 
-  if(typingCount==10 || typingCount==11 || typingCount==15){
+  if(typingCount==7||typingCount==9||typingCount==11||typingCount==14||typingCount==17){
+    skipButton.style.opacity="0";
+    skipButton.style.pointerEvents="none"
+  } else{
+    skipButton.style.opacity="1";
+    skipButton.style.pointerEvents="auto"
+  }
+
+  if(typingCount==0||typingCount==10 || typingCount==11 || typingCount==15){
     backButton.style.opacity="0";
     backButton.style.pointerEvents="none"
   } else{
