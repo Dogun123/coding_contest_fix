@@ -1,0 +1,30 @@
+module.exports = function(app)
+{
+    app.get('/',function(req,res){
+        res.render('cover.html')
+    });
+    app.get('/home',function(req,res){
+        res.render('home.html');
+    });
+    app.get('/activity',function(req,res){
+        res.render('activity.html');
+    });
+    app.get('/puzzle',function(req,res){
+        res.render('puzzle.html')
+    });
+    app.get('/population',function(req,res){
+        res.render('population.html')
+    });
+    app.get('/popuquiz',function(req,res){
+        res.render('popuquiz.html')
+    });
+    app.get('/tutorial',function(req,res){
+        res.render('dutorial.html')
+    });
+    app.get('/learn',function(req,res){
+        res.render('learn.html')
+    })
+    app.get('/predict',function(req,res){
+        res.render('predict.html')
+    })
+}
