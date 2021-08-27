@@ -843,23 +843,13 @@ function typing(){
         skipButton.classList.add('skip__animation');
         typingAnimation()
     }
-// 바로넘어가기 방지(버튼을 눌렀을때만 넘어가도록)
-  if(typingCount==7 || typingCount==9 || typingCount==11 ||typingCount==14 ||typingCount==17){
-    skipButton.classList.remove('skip__animation');
-  }
-  // if(typingCount==17){
-  //   skipButton.style.opacity='0';
-  //   skipButton.style.pointerEvents="none"
-  // } else{
-  //   skipButton.style.opacity='1';
-  //   skipButton.style.pointerEvents="auto"
-  // }
   console.log(typingCount);
 }
 
 
 function goNext(){
   skipButton.classList.remove('skip__animation')
+
   index=0;
   text.textContent = "";
   typingCount++;
@@ -995,10 +985,8 @@ function typingAnimation(){
   if(typingCount==7||typingCount==9||typingCount==11||typingCount==14||typingCount==17){
     skipButton.style.opacity="0";
     skipButton.style.pointerEvents="none"
-  } else{
-    skipButton.style.opacity="1";
-    skipButton.style.pointerEvents="auto"
   }
+
 
   if(typingCount==0||typingCount==10 || typingCount==11 || typingCount==15){
     backButton.style.opacity="0";

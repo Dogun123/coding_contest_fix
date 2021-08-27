@@ -1472,13 +1472,12 @@ p {
 }
 
 .skip__button{
-  /* pointer-events: none; */
+  pointer-events: none;
 }
 
 .skip__animation{
   pointer-events: auto;
   animation: skipAnimation 2.5s linear infinite;
-  
 }
 
 
