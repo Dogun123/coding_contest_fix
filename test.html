@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="map contents for Korean elementary social subject">
+    <meta name="author" content="Dogun">
+    <link rel="icon" type = "image/png" href = "imgs\map.png">
+    <title>초등사회지도학습</title>
+    <script src="https://kit.fontawesome.com/02390708a3.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+    </style>
+    <link rel="stylesheet" href="/public/style_pdg.css">
+    <script src="/public/test.js" defer></script>
+    
+</head>
+<body style="background-color: blanchedalmond;">
+    <section id="section" class="questionaire" style="text-align: center; margin-top:70px; ">
+        <div class="title">
+            <p style="font-size: 70px; color:cornflowerblue; width:500px; margin-left: 200px; font-weight: bold;">실력 테스트📃</p>
+            <p style="font-size: 20px; width:500px; margin-left:200px; margin-top: 10px; margin-bottom:70px;">배운 내용을 잘 기억하는지 문제를 풀어보세요!</p>
+        </div>
+        <div class="question">
+            <div class="question1">
+                <div class="question_query"  style="margin-top: 10px;">
+                    ① 한 나라 또는 일정한 지역에 사는 사람의 수를 의미하는 단어는? 
+                </div>
+                <div class="question_choice">
+                    <input class="question_input" type="text" placeholder="입 력">
+                </div>
+            </div>
+            <div class="question2">
+                <div class="question_query">
+                    ② 국가 또는 한 지역의 인구를 피라미드 모양으로 나타낸 그래프는 무엇이라고 하나요? 
+                </div>
+                <div class="question_choice">
+                    <div class="question_input_box">
+                        <input type="radio" name="chk_info" value="wrong" > 인구 그릇
+                    </div>
+                    <div class="question_input_box">
+                        <input type="radio" name="chk_info" value="wrong"> 인구 상자
+                    </div>
+                    <div class="question_input_box">
+                        <input type="radio" name="chk_info" value="correct"> 인구 피라미드
+                    </div>
+                    <div class="question_input_box">
+                        <input type="radio" name="chk_info" value="wrong"> 인구 나무
+                    </div>
+            </div>
+
+            <div class="question3">
+                <div class="question_query">
+                    ③ 우리나라의 초등학교 학급당 학생 수가 줄어드는 까닭은?
+                </div>
+                <div class="question_choice">
+                    <div class="question_input_box">
+                        <input type="radio" name="chk_info2" value="correct"> 아이를 적게 낳아서
+                    </div>
+                    <div class="question_input_box">
+                        <input type="radio" name="chk_info2" value="wrong"> 아이를 많이 낳아서
+                    </div>
+                    <div class="question_input_box">
+                        <input type="radio" name="chk_info2" value="wrong"> 초등학교가 많아져서
+                    </div>
+            </div>
+
+            <div class="question4">
+                <div class="question_query">
+                    ④ 고령화 비율이 몇 퍼센트 이상부터 고령화 사회라고 하나요?
+                </div>
+                <div class="question_choice">
+                    <div class="question_input_box">
+                        <input type="radio" name="chk_info3" value="wrong" > 20%
+                    </div>
+                    <div class="question_input_box">
+                        <input type="radio" name="chk_info3" value="wrong"> 15%
+                    </div>
+                    <div class="question_input_box">
+                        <input type="radio" name="chk_info3" value="correct"> 7%
+                    </div>
+            </div>
+
+            <div class="question4">
+                <div class="question_query">
+                    ⑤ 우리나라 인구 구성은 고출산 고령화의 특징을 가지고 있다. (맞으면 O, 틀리면 X)
+                </div>
+                <div class="question_choice">
+                    <div class="question_input_box">
+                        <input type="radio" name="chk_info4" value="wrong" >O
+                    </div>
+                    <div class="question_input_box">
+                        <input type="radio" name="chk_info4" value="correct">X
+                    </div>
+            </div>
+
+        </div>
+
+        <div class="submit">
+            결과보기
+        </div>
+    </section>
+    <section class="question_result_section" style="margin-top: 200px;">
+        <div class="question_result" style="text-align: center; font-size: 18px;" >
+            <p style="font-size: 70px; color:black; font-weight: bold; letter-spacing: 5px; margin-bottom: 20px;">결과</p>
+            <div>
+                총 문제수 : 
+                <span>5</span>
+            </div>
+            <div>
+                맞춘 개수 : 
+                <span class=correct_count></span>
+            </div>
+            <div>
+                틀린 개수 : 
+                <span class=wrong_count></span>
+            </div>
+            <div style="margin-top: 10px; color:blue">
+                점수 :
+                <span class=total>60점</span>
+            </div>
+        </div>
+        <div class="question_retry" style="margin-top:20px">
+            다시 풀기
+        </div>
+        <div class="question_home">
+            홈으로
+        </div>
+    </section>
+</body>
+</html>

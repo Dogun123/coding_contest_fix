@@ -918,7 +918,7 @@ function typingAnimation(){
   speed=60;
   speedSlow=400;
 
-  
+
 
   if(typingCount==2 || typingCount==3 || typingCount==4 || typingCount==5){
     chartTop.style.backgroundColor="white";
@@ -983,8 +983,11 @@ function typingAnimation(){
   }
 
   if(typingCount==7||typingCount==9||typingCount==11||typingCount==14||typingCount==17){
-    skipButton.style.opacity="0";
-    skipButton.style.pointerEvents="none"
+    skipButton.style.display="none"
+  } else{
+    skipButton.style.display=""
+
+
   }
 
 

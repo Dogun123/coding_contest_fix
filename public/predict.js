@@ -799,6 +799,8 @@ async function loop() {
     };
     if(predictionNum==100){
       // console.log(webcam);
+      var canvasValue = webcam.canvas.toDataURL();
+      console.log(canvasValue);
       await webcam.stop();
       setTimeout(()=>{
         machineSection.style.display='none'
@@ -873,7 +875,6 @@ async function loop2() {
     console.log(predictionNum);
   };
   if(predictionNum==100){
-    console.log(webcam2);
     await webcam2.stop();
     setTimeout(()=>{
       machineSection.style.display='none'
@@ -1231,3 +1232,4 @@ hintClose.addEventListener('click',()=>{
 })
 
 // 스크립트 토글 버튼
+
